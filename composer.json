@@ -1,0 +1,32 @@
+{
+  "name": "edenmitchell/laravel-database-queue-monitor",
+  "description": "Monitors your Laravel database queues",
+  "type": "library",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "edenmitchell",
+      "email": "eden@contactdynamix.com.au"
+    }
+  ],
+  "minimum-stability": "stable",
+  "require": {},
+  "require-dev": {
+    "orchestra/testbench": "~3.0"
+  },
+  "autoload": {
+    "psr-4": {
+      "EdenMitchell\\LaravelDatabaseQueueMonitor\\": "src/"
+    }
+  },
+  "extra": {
+    "laravel": {
+      "providers": [
+        "EdenMitchell\\LaravelDatabaseQueueMonitor\\LaravelDatabaseQueueMonitorServiceProvider"
+      ],
+      "aliases": {
+        "Debugbar": "EdenMitchell\\LaravelDatabaseQueueMonitor\\Facades\\QueueMonitor"
+      }
+    }
+  }
+}

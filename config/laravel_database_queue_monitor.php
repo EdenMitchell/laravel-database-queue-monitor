@@ -23,5 +23,8 @@ return [
     'database_timezone' => 'UTC',
 
     // Determines the amount of time before your dashboard stops auto-refreshing
-    'auto_refresh_timeout' => 600000
+    'auto_refresh_timeout' => 600000,
+
+    // Middleware to be used for the queue monitor. Array of strings
+    'middleware' => ['auth']
 ];
